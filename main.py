@@ -23,7 +23,6 @@ def get_word_set(file_name):
                     word_set.add(word)
     return word_set
 
-
 def stat_words(root_dir):
     '''
     统计邮件中出现各个词的次数
@@ -88,4 +87,4 @@ for f in os.listdir('./data/test/'):
     else:
         wrong += 1
     print(int(f), final_ps_w)
-print(correct, wrong, correct / (correct + wrong))
+print('correct:', correct, 'wrong:', wrong, 'accuracy:', correct / (correct + wrong))
